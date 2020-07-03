@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>index</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="BHost template project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+<link href="plugins\fontawesome-free-5.11.2-web\css\all.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/index.css">
+<link rel="stylesheet" type="text/css" href="styles/index_responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+	<!-- Header -->
+
+	<header class="header trans_400">
+		<div class="header_content d-flex flex-row align-items-center justify-content-start trans_400">
+			<div class="logo"><a href="index.html"><span>#</span>SNS</a></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10 offset-lg-2">
+						<nav class="main_nav">
+							<ul class="d-flex flex-row align-items-center justify-content-start">
+								<li>
+									<div class="dropdown">
+									  <div class="dropbtn">About</div>
+									  <div class="dropdown-content text-center">
+									    <a href="about.html">#SNS란?</a>
+									    <a href="use.html" class="bottom-line">이용방법</a>
+									  </div>
+									</div>
+								</li>
+								<li>
+									<div class="dropdown">
+									  <div class="dropbtn">SNS</div>
+									  <div class="dropdown-content text-center margin-left">
+									    <a href="facebook.html">페이스북</a>
+									    <a href="instagram.html">인스타그램</a>
+									    <a href="twitter.html">트위터</a>
+									    <a href="ect.html" class="bottom-line">기타</a>
+									  </div>
+									</div>
+								</li>
+								<li>
+									<div class="dropdown">
+									  <div class="dropbtn">Market</div>
+									  <div class="dropdown-content text-center">
+									    <a href="market.html">등록하기</a>
+									    <a href="recommend.html" class="bottom-line">추천하기</a>
+									  </div>
+									</div>
+								</li>
+								<li>
+									<div class="dropdown">
+									  <div class="dropbtn">Service</div>
+									  <div class="dropdown-content text-center">
+									    <a href="service.html">공지사항</a>
+									    <a href="qna.html" class="bottom-line">문의하기</a>
+									  </div>
+									</div>
+								</li>
+								<li>
+									<div class="dropdown">
+									  <div class="dropbtn active">Index</div>
+									  <div class="dropdown-content text-center">
+									    <a href="sitemap.html">사이트맵</a>
+									    <a href="userlaw.html">개인정보처리방침</a>
+									    <a href="uselaw.html" class="bottom-line">이용약관</a>
+									  </div>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="header_right d-flex flex-row align-items-center justify-content-start">
+
+				<!-- Header Links -->
+				<div class="header_links">
+					<ul class="d-flex flex-row align-items-center justify-content-start">
+						<li><a href="signup.html">Sign Up</a></li>
+						<li><a href="login.html">Login</a></li>
+					</ul>
+				</div>
+
+				<!-- Hamburger -->
+				<div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+			</div>	
+		</div>
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu trans_500">
+		<div class="menu_content d-flex flex-column align-items-center justify-content-center">
+			<div class="menu_nav trans_500">
+				<ul class="text-center">
+					<li>
+						<div class="dropdown-sub">
+						  <button class="dropbtn-sub" onclick="dropbtn_active0()">About <span id="change1"><i class="fa fa-caret-down" aria-hidden="true"></i></span></button>
+						  <div class="dropdown_content_sub">
+						    <a href="about.html">#SNS란?</a>
+						    <a href="use.html">이용방법</a>
+						  </div>
+						</div></li>
+					<li><div class="dropdown-sub">
+						  <button class="dropbtn-sub" onclick="dropbtn_active1()">SNS <span id="change2"><i class="fa fa-caret-down" aria-hidden="true"></i></span></button>
+						  <div class="dropdown_content_sub">
+						    <a href="facebook.html"><i class="fab fa-facebook-square" aria-hidden="true"></i>  페이스북</a>
+						    <a href="instagram.html"><i class="fab fa-instagram" aria-hidden="true"></i>  인스타그램</a>
+						    <a href="twitter.html"><i class="fab fa-twitter" aria-hidden="true"></i>  트위터</a>
+						    <a href="ect.html"><i class="fas fa-cloud" aria-hidden="true"></i>  기타</a>
+						  </div>
+						</div></li>
+					<li><div class="dropdown-sub">
+						  <button class="dropbtn-sub" onclick="dropbtn_active2()">Market <span id="change3"><i class="fa fa-caret-down" aria-hidden="true"></i></span></button>
+						  <div class="dropdown_content_sub">
+						    <a href="market.html">등록하기</a>
+						    <a href="recommend.html">추천하기</a>
+						  </div>
+						</div></li>
+					<li><div class="dropdown-sub">
+						  <button class="dropbtn-sub" onclick="dropbtn_active3()">Service <span id="change4"><i class="fa fa-caret-down" aria-hidden="true"></i></span></button>
+						  <div class="dropdown_content_sub">
+						    <a href="service.html">공지사항</a>
+						    <a href="qna.html">문의하기</a>
+						  </div>
+						</div></li>
+					<li><div class="dropdown-sub">
+						  <button class="dropbtn-sub" onclick="dropbtn_active4()">Index <span id="change5"><i class="fa fa-caret-down" aria-hidden="true"></i></span></button>
+						  <div class="dropdown_content_sub">
+						    <a href="sitemap.html">사이트맵</a>
+						    <a href="userlaw.html">개인정보처리방침</a>
+						    <a href="uselaw.html">이용약관</a>
+						  </div>
+						</div></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Home -->
+
+	<div class="home">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="home_content">
+						<div class="home_title">이용약관</div>
+						<div class="index-over"><a href="index.html">Home</a> <i class="fa fa-angle-right" aria-hidden="true"></i> Index <i class="fa fa-angle-right" aria-hidden="true"></i> <a href="uselaw.html">이용약관</a></div>	
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<div class="domain_search">
+						<div class="domain_search_background"></div>
+						<div class="domain_search_overlay"></div>
+						<form action="#" class="domain_search_form" id="domain_search_form">
+							<input type="text" class="domain_search_input" placeholder="#" required="required">
+								<button class="domain_search_button"><i class="fas fa-search" aria-hidden="true"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Features -->
+
+	<div class="features">
+		<div class="container">
+			<div class="row row-lg-eq-height">
+				
+				<!-- Features Content -->
+				<div class="col">
+					<div class="features_content text-center">
+						
+						<!-- Feature -->
+						<div class="feature d-flex flex-row align-items-start justify-content-start">
+							<div class="feature_content margin_auto">
+								<div class="feature_title">#sns 서비스 이용약관은 다음과 같은 내용을 담고 있습니다.</div>
+								<div class="feature_text feature_text_hover">
+									<p>
+										여러분을 환영합니다.</p><p>
+										회원으로 가입하시면 #sns 서비스를 보다 편리하게 이용할수 있습니다.</p><p>
+										여러분이 제공한 정보를 소중히 다룰 것 입니다.</p><p>
+										여러분의 개인정보를 소중히 보호합니다.</p><p>
+										타인의 권리를 존중해 주세요.</p><p>
+										#sns 서비스 이용과 관련하여 몇 가지 주의사항이 있습니다.</p><p>
+										#sns 에서 제공하는 적립금을 활용해 보세요.</p><p>
+										부득이 서비스 이용을 제한할 경우 합리적인 절차를 준수합니다.</p><p>
+										#sns의 잘못은 #sns가 책임집니다.</p><p>
+										언제든지 #sns 서비스 이용계약을 해지하실 수 있습니다.</p><p>
+										서비스 중단 또는 변경 시 꼭 알려드리겠습니다.</p><p>
+										주요 사항을 잘 안내하고 여러분의 소중한 의견에 귀 기울이겠습니다.</p><p>
+										여러분이 쉽게 알 수 있도록 약관 및 운영정책을 게시하며 사전 공지 후 개정합니다.</p><p>
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Feature -->
+						<div class="feature d-flex flex-row align-items-start justify-content-start">
+							<div class="feature_content margin_auto">
+								<div class="feature_title">픽사베이 이미지(전체)</div>
+								<div class="feature_text">
+									<p><a href="https://pixabay.com/ko/photos/">https://pixabay.com/ko/photos/</a><br>
+										<상업적사용가능/출처 밝히지 않아도 됨></p>
+								</div>
+							</div>
+						</div>
+						<!-- Feature -->
+						<div class="feature d-flex flex-row align-items-start justify-content-start">
+							<div class="feature_content margin_auto">
+								<div class="feature_title">약관 참조(네이버)</div>
+								<div class="feature_text">
+									<p><a href="https://policy.naver.com/policy/service.html">https://policy.naver.com/policy/service.html</a></p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="footer_content">
+			<div class="container">
+				<div class="row footer_row">
+					<!-- Footer Column -->
+					<div class="col-xl-3 col-md-6">
+						<div class="footer_title">Other Links</div>
+						<div class="footer_list">
+							<ul>
+								<li><a href="https://ko-kr.facebook.com/" target="_blank"><i class="fab fa-facebook-square" aria-hidden="true"></i> facebook</a></li>
+								<li><a href="https://www.instagram.com/?hl=ko" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i> instagram</a></li>
+								<li><a href="https://twitter.com/?lang=ko" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i> twitter</a></li>
+								<li><a href="https://google.com" target="_blank"><i class="fab fa-google" aria-hidden="true"></i> google</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Footer Column -->
+					<div class="col-xl-3 col-md-6">
+						<div class="footer_title">Useful Links</div>
+						<div class="footer_list">
+							<ul>
+								<li><a href="sitemap.html">사이트맵</a></li>
+								<li><a href="userlaw.html">개인정보처리방침</a></li>
+								<li><a href="uselaw.html">이용약관</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- Footer Column -->
+					<div class="col-xl-6 col-md-6">
+						<div class="logo footer_logo"><a href="#"><span>#</span>SNS</a></div>
+						<div class="footer_info">
+							<ul>
+								<li class="d-flex flex-row align-items-start justify-content-start">
+									<div><div>Name</div></div>
+									<div>함예빈</div>
+								</li>
+								<li class="d-flex flex-row align-items-start justify-content-start">
+									<div><div>Number</div></div>
+									<div>20190972</div>
+								</li>
+								<li class="d-flex flex-row align-items-start justify-content-start">
+									<div><div>Address</div></div>
+									<div>부산광역시 해운대구 센텀중앙로 55(우동) 경남정보대학교 센텀캠퍼스</div>
+								</li>
+								<li class="d-flex flex-row align-items-start justify-content-start">
+									<div><div>Phone</div></div>
+									<div>051-950-6011</div>
+								</li>
+								<li class="d-flex flex-row align-items-start justify-content-start">
+									<div><div>E-mail</div></div>
+									<div>20190972@o365.kit.ac.kr</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright_bar text-center"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="far fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+	</footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap-4.1.2/popper.js"></script>
+<script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/progressbar/progressbar.min.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

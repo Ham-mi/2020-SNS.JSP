@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Market</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="BHost template project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+<link href="plugins\fontawesome-free-5.11.2-web\css\all.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/market.css">
+<link rel="stylesheet" type="text/css" href="styles/market_responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+<!-- Header -->
+
+	<header class="header trans_400">
+		<div class="header_content d-flex flex-row align-items-center justify-content-start trans_400">
+			<div class="logo"><a href="index.html"><span>#</span>SNS</a></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10 offset-lg-2">
+						<nav class="main_nav">
+							<ul class="d-flex flex-row align-items-center justify-content-start">
+								<li>
+									<div class="dropdown">
+									  <div class="dropbtn">About</div>
+									  <div class="dropdown-content text-center">
+									    <a href="about.html">#SNS란?</a>
+									    <a href="use.html" class="bottom-line">이용방법</a>
+									  </div>
+									</div>
+								</li>
+								<li>
+									<div class="dropdown">
+									  <div class="dropbtn">SNS</div>
+									  <div class="dropdown-content text-center margin-left">
+									    <a href="facebook.html">페이스북</a>
+									    <a href="instagram.html">인스타그램</a>
+									    <a href="twitter.html">트위터</a>
+									    <a href="ect.html" class="bottom-line">기타</a>
+									  </div>
+									</div>
+								</li>
+								<li>
+									<div class="dropdown active">
+									  <div class="dropbtn">Market</div>
+									  <div class="dropdown-content text-center">
+									    <a href="market.html">등록하기</a>
+									    <a href="recommend.html" class="bottom-line">추천하기</a>
+									  </div>
+									</div>
+								</li>
+								<li>
+									<div class="dropdown">
+									  <div class="dropbtn">Service</div>
+									  <div class="dropdown-content text-center">
+									    <a href="service.html">공지사항</a>
+									    <a href="qna.html" class="bottom-line">문의하기</a>
+									  </div>
+									</div>
+								</li>
+								<li>
+									<div class="dropdown">
+									  <div class="dropbtn">Index</div>
+									  <div class="dropdown-content text-center">
+									    <a href="sitemap.html">사이트맵</a>
+									    <a href="userlaw.html">개인정보처리방침</a>
+									    <a href="uselaw.html" class="bottom-line">이용약관</a>
+									  </div>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="header_right d-flex flex-row align-items-center justify-content-start">
+
+				<!-- Header Links -->
+				<div class="header_links">
+					<ul class="d-flex flex-row align-items-center justify-content-start">
+						<li><a href="signup.html">Sign Up</a></li>
+						<li><a href="login.html">Login</a></li>
+					</ul>
+				</div>
+
+				<!-- Hamburger -->
+				<div class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></div>
+			</div>	
+		</div>
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu trans_500">
+		<div class="menu_content d-flex flex-column align-items-center justify-content-center">
+			<div class="menu_nav trans_500">
+				<ul class="text-center">
+					<li>
+						<div class="dropdown-sub">
+						  <button class="dropbtn-sub" onclick="dropbtn_active0()">About <span id="change1"><i class="fa fa-caret-down" aria-hidden="true"></i></span></button>
+						  <div class="dropdown_content_sub">
+						    <a href="about.html">#SNS란?</a>
+						    <a href="use.html">이용방법</a>
+						  </div>
+						</div></li>
+					<li><div class="dropdown-sub">
+						  <button class="dropbtn-sub" onclick="dropbtn_active1()">SNS <span id="change2"><i class="fa fa-caret-down" aria-hidden="true"></i></span></button>
+						  <div class="dropdown_content_sub">
+						    <a href="facebook.html"><i class="fab fa-facebook-square" aria-hidden="true"></i>  페이스북</a>
+						    <a href="instagram.html"><i class="fab fa-instagram" aria-hidden="true"></i>  인스타그램</a>
+						    <a href="twitter.html"><i class="fab fa-twitter" aria-hidden="true"></i>  트위터</a>
+						    <a href="ect.html"><i class="fas fa-cloud" aria-hidden="true"></i>  기타</a>
+						  </div>
+						</div></li>
+					<li><div class="dropdown-sub">
+						  <button class="dropbtn-sub" onclick="dropbtn_active2()">Market <span id="change3"><i class="fa fa-caret-down" aria-hidden="true"></i></span></button>
+						  <div class="dropdown_content_sub">
+						    <a href="market.html">등록하기</a>
+						    <a href="recommend.html">추천하기</a>
+						  </div>
+						</div></li>
+					<li><div class="dropdown-sub">
+						  <button class="dropbtn-sub" onclick="dropbtn_active3()">Service <span id="change4"><i class="fa fa-caret-down" aria-hidden="true"></i></span></button>
+						  <div class="dropdown_content_sub">
+						    <a href="service.html">공지사항</a>
+						    <a href="qna.html">문의하기</a>
+						  </div>
+						</div></li>
+					<li><div class="dropdown-sub">
+						  <button class="dropbtn-sub" onclick="dropbtn_active4()">Index <span id="change5"><i class="fa fa-caret-down" aria-hidden="true"></i></span></button>
+						  <div class="dropdown_content_sub">
+						    <a href="sitemap.html">사이트맵</a>
+						    <a href="userlaw.html">개인정보처리방침</a>
+						    <a href="uselaw.html">이용약관</a>
+						  </div>
+						</div></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Home -->
+
+	<div class="home">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="home_content">
+						<div class="home_title">등록하기</div>
+						<div class="index-over"><a href="index.html">Home</a> <i class="fa fa-angle-right" aria-hidden="true"></i> Market <i class="fa fa-angle-right" aria-hidden="true"></i> <a href="market.html">등록하기</a></div>
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<div class="domain_search">
+						<div class="domain_search_background"></div>
+						<div class="domain_search_overlay"></div>
+						<form action="#" class="domain_search_form" id="domain_search_form">
+							<input type="text" class="domain_search_input" placeholder="#" required="required">
+								<button class="domain_search_button"><i class="fa fa-search" aria-hidden="true"></i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--recommended-->
+	<div class="recommended">
+		<div class="container">
+			<div class="row">
+
+					<div class="r_box">
+						<div class="r_main">
+							<h2>마켓등록</h2>
+						</div>
+						<div class="r_sub">
+							<div class="row">
+								<div class="col-2">
+									<h4>기본정보</h4>
+								</div>
+								<div class="col r_sub_div">
+									<input type="text" name="샵이름" placeholder="샵이름" class="contact_input">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-2">
+								</div>
+								<div class="col r_radio">
+									<label><input type="radio" name="name" value="페이스북" > 페이스북</label>
+									<label><input type="radio" name="name" value="인스타그램"> 인스타그램</label>
+									<label><input type="radio" name="name" value="트위터" > 트위터</label>
+									<label><input type="radio" name="name" value="기타" > 기타</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-2">
+									<h4>카테고리</h4>
+								</div>
+								<div class="col r_check">
+									<label><input type="checkbox" name="category" value="의류"> 의류</label>
+									<label><input type="checkbox" name="category" value="악세서리"> 악세서리</label>
+									<label><input type="checkbox" name="category" value="잡화"> 잡화</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-2">
+									<h4>주소</h4>
+								</div>
+								<div class="col">
+									<input type="text" name="sns주소" placeholder="sns주소" class="contact_input">
+								</div>
+								<div class="col-1"></div>
+							</div>
+							<div class="row">
+								<div class="col-2">
+									<h4>아이디</h4>
+								</div>
+								<div class="col r_sub_div">
+									<input type="text" name="아이디" placeholder="아이디" class="contact_input">
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-2">
+									<h4>국적</h4>
+								</div>
+								<div class="col r_radio">
+									<span class="search_from"><label><input type="radio" name="from" value="전체" checked="checked">전체</label></span>
+									<span class="search_from"><label><input type="radio" name="from" value="국내">국내</label></span>
+									<span class="search_from"><label><input type="radio" name="from" value="해외">해외</label></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-2">
+									<h4>방식</h4>
+								</div>
+								<div class="col r_check">
+									<span class="search_how"><label><input type="checkbox" name="how" value="수제">수제</label></span>
+									<span class="search_how"><label><input type="checkbox" name="how" value="공구">공구</label></span>
+									<span class="search_how"><label><input type="checkbox" name="how" value="직구">직구</label></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-2">
+									<h4>태그</h4>
+								</div>
+								<div class="col r_check">
+									<span class="search_tag"><label><input type="checkbox" name="tag" value="베이직한">베이직한</label></span>
+									<span class="search_tag"><label><input type="checkbox" name="tag" value="귀여운">귀여운</label></span>
+									<span class="search_tag"><label><input type="checkbox" name="tag" value="화려한">화려한</label></span>
+									<span class="search_tag"><label><input type="checkbox" name="tag" value="특이한">특이한</label></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-2"></div>
+								<div class="col r_check">
+									<span class="search_tag"><label><input type="checkbox" name="tag" value="심플한">심플한</label></span>
+									<span class="search_tag"><label><input type="checkbox" name="tag" value="가벼운">가벼운</label></span>
+									<span class="search_tag"><label><input type="checkbox" name="tag" value="편안한">편안한</label></span>
+									<span class="search_tag"><label><input type="checkbox" name="tag" value="단정한">단정한</label></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-2"></div>
+								<div class="col r_sub_div">
+									<input type="text" name="직접입력" placeholder="직접입력" class="contact_input">
+									<button class="contact_button trans_200 but_sub">+</button>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-2">
+									<h4>이미지</h4>
+								</div>
+								<div class="col r_sub_div">
+									<div class="fileBox">
+										<input type="text" class="fileName contact_input" readonly="readonly">
+										<label for="uploadBtn" class="btn_file contact_button trans_200 but_sub">찾아보기</label>
+										<input type="file" id="uploadBtn" class="uploadBtn">
+									</div>
+								</div>
+							</div>
+							<div class="r_but">
+								<button class="contact_button trans_200"onclick="yes()">등록하기</button>
+								<button class="contact_button trans_200">취소하기</button>
+							</div>
+
+						</div>
+					</div>
+
+			</div>
+		</div>		
+	</div>
+<!-- Footer -->
+
+	<footer class="footer">
+		<div class="footer_content">
+			<div class="container">
+				<div class="row footer_row">
+					<!-- Footer Column -->
+					<div class="col-xl-3 col-md-6">
+						<div class="footer_title">Other Links</div>
+						<div class="footer_list">
+							<ul>
+								<li><a href="https://ko-kr.facebook.com/" target="_blank"><i class="fab fa-facebook-square" aria-hidden="true"></i> facebook</a></li>
+								<li><a href="https://www.instagram.com/?hl=ko" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i> instagram</a></li>
+								<li><a href="https://twitter.com/?lang=ko" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i> twitter</a></li>
+								<li><a href="https://google.com" target="_blank"><i class="fab fa-google" aria-hidden="true"></i> google</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Footer Column -->
+					<div class="col-xl-3 col-md-6">
+						<div class="footer_title">Useful Links</div>
+						<div class="footer_list">
+							<ul>
+								<li><a href="sitemap.html">사이트맵</a></li>
+								<li><a href="userlaw.html">개인정보처리방침</a></li>
+								<li><a href="uselaw.html">이용약관</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- Footer Column -->
+					<div class="col-xl-6 col-md-6">
+						<div class="logo footer_logo"><a href="#"><span>#</span>SNS</a></div>
+						<div class="footer_info">
+							<ul>
+								<li class="d-flex flex-row align-items-start justify-content-start">
+									<div><div>Name</div></div>
+									<div>함예빈</div>
+								</li>
+								<li class="d-flex flex-row align-items-start justify-content-start">
+									<div><div>Number</div></div>
+									<div>20190972</div>
+								</li>
+								<li class="d-flex flex-row align-items-start justify-content-start">
+									<div><div>Address</div></div>
+									<div>부산광역시 해운대구 센텀중앙로 55(우동) 경남정보대학교 센텀캠퍼스</div>
+								</li>
+								<li class="d-flex flex-row align-items-start justify-content-start">
+									<div><div>Phone</div></div>
+									<div>051-950-6011</div>
+								</li>
+								<li class="d-flex flex-row align-items-start justify-content-start">
+									<div><div>E-mail</div></div>
+									<div>20190972@o365.kit.ac.kr</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright_bar text-center"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="far fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></div>
+	</footer>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap-4.1.2/popper.js"></script>
+<script src="styles/bootstrap-4.1.2/bootstrap.min.js"></script>
+<script src="plugins/greensock/TweenMax.min.js"></script>
+<script src="plugins/greensock/TimelineMax.min.js"></script>
+<script src="plugins/scrollmagic/ScrollMagic.min.js"></script>
+<script src="plugins/greensock/animation.gsap.min.js"></script>
+<script src="plugins/greensock/ScrollToPlugin.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/progressbar/progressbar.min.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="plugins/jquery-circle-progress-1.2.2/circle-progress.js"></script>
+<script src="js/market.js"></script>
+</body>
+</html>
